@@ -1,14 +1,15 @@
-import './App.css';
-import Stars from './stars';
-
+import { Routes, Route } from "react-router-dom";
+import Main from './main';
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-      </header>
-      <body id='app-body'>
-        <Stars/>
-      </body>
+    <div>
+      <style>
+@import url('https://fonts.googleapis.com/css2?family=Nanum+Myeongjo&display=swap');
+</style>
+
+      <Routes>
+          <Route path="/" element={<Main />} />
+      </Routes>
     </div>
   );
 }
