@@ -1,5 +1,6 @@
 import { Routes, Route } from "react-router-dom";
 import Main from './main';
+import Planet from "./planet";
 function App() {
   return (
     <div>
@@ -9,6 +10,7 @@ function App() {
 
       <Routes>
           <Route path="/" element={<Main />} />
+          <Route path="/planets/:name" element={<Planet />} />
       </Routes>
     </div>
   );
