@@ -8,9 +8,10 @@
     flex-direction: column;
   }
   #planets{
-    width: 100vw;
+    max-width: 100vw;
     height: fit-content;
     background-color: #000000;
+    color: white;
   }
   #planet-container{
     display: flex;

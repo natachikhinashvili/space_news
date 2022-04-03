@@ -1,0 +1,63 @@
+#rockets-page{
+    background-color: black;
+    color: white;
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    font-family: 'Nanum Myeongjo', serif;
+}
+#back-from-rockets{
+    position: absolute;
+    left: 0;
+    top: 0;
+    background-color: transparent;
+    border: none;
+    margin: 1vw;
+    margin-left: 1vw;
+}
+#rocket-companies-container{
+    width: 100vw;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    margin-bottom: 20vh;
+}
+.rocket-company-img{
+    width: 300px;
+    height: 300px;
+    object-fit: cover;
+}
+#nasa-company-div,#spacex-company-div{
+    height: fit-content;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-size: 1.4rem;
+    cursor: pointer;
+    box-shadow: -4px 3px 20px #ffffff0c;
+    padding: 1vw;
+}
+#nasa-company-div-title,
+#spacex-company-div-title{
+    text-shadow: 0 0 3px  #ffffff;
+}
+#rockets-page-title{
+    font-size: 2rem;
+}
+#rockets-page-header{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+#nasa-company-div:hover,
+#spacex-company-div:hover{
+    transform: translate(10px, -20px);
+    transition: transform 330ms ease-in-out;
+}
+#back-from-rockets:hover{
+    transform: translate(-10px, 0px);
+    transition: transform 330ms ease-in-out;
+}

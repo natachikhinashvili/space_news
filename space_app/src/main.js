@@ -1,17 +1,23 @@
 import Star from './star';
-import Planetspreview from './planets.js';
 import './main.css'
+
+import { Link } from 'react-router-dom';
 
 export default function Main(){
     return (
-        <div>
-            <header className="App-header">
-              <h1>Space app</h1>
-            </header>
-            <body id='app-body'>
-              <Star/>
-              <Planetspreview/>
-            </body>
+        <div className='App'>
+          <Star/>
+          <header className="App-header">
+            <h1 id='landingpage-title'>Space app</h1>
+          </header>
+          <div>
+            <Link className='link-to-page' to={'/rockets'}>
+              <h2 id='choose-rockets' className='choose'>rockets</h2>
+            </Link>
+            <Link className='link-to-page' to={'/planets'}>
+              <h2 id='choose-rockets' className='choose'>planets</h2>
+            </Link>
+          </div>
         </div>
     )
 }

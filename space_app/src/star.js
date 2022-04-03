@@ -11,7 +11,7 @@ export default function Star(){
                 position: 'absolute',
                 transform: 'translate(-10px, 20px)',
                 left: Math.floor(Math.random() * (1300 - 20 + 1)) + 20 + 'px',
-                top: Math.floor(Math.random() * (3500 - 20 + 1)) + 20 + 'px'
+                top: Math.floor(Math.random() * (700 - 20 + 1)) + 20 + 'px'
             }}
             ></div>
         ) )
