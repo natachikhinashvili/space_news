@@ -1,10 +1,17 @@
 import './planetspreview.css'
 import planetsData from './planets-data'
 import { Link } from 'react-router-dom'
+import { AiOutlineArrowLeft } from "react-icons/ai";
 export default function Planetspreview(){
 
     return (
+      <div id='planets-page'>
         <div id='planets'>
+        <Link to='/'>
+            <button id='back-from-rockets'>
+               <AiOutlineArrowLeft size={30} color='#fff'/>
+            </button>
+        </Link>
           {planetsData.map((planet)=> {
             return ( 
               <div id="planet-container">
@@ -19,6 +26,6 @@ export default function Planetspreview(){
               </div>
             )
           })}
-        </div>
+        </div></div>
     )
 }

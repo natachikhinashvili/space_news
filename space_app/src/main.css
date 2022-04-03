@@ -28,6 +28,7 @@ button{
     display: block;
     position: relative;
     padding: 0.2em 0;
+    cursor: pointer;
 }
 #landingpage-title::after {
     content: '';
@@ -35,8 +36,8 @@ button{
     bottom: 0;
     left: 0;
     width: 100%;
-    height: 0.1em;
-    background-color: hotpink;
+    height: 0.03em;
+    background-color: rgb(195, 182, 255);
     opacity: 0;
     transition: opacity 300ms, transform 300ms;
   }
@@ -48,7 +49,11 @@ button{
     transform-origin: center;
     transform: scale(1);
   }
-  
+
+  #landingpage-title:hover::after,
+  #landingpage-title:focus::after {
+    transform: scale(1);
+  }
 .link-to-page{
     text-decoration: none;
     color: white;
