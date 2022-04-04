@@ -1,4 +1,3 @@
-import Star from './star';
 import './main.css'
 
 import { Link } from 'react-router-dom';
@@ -6,7 +5,6 @@ import { Link } from 'react-router-dom';
 export default function Main(){
     return (
         <div className='App'>
-          <Star/>
           <header className="App-header">
             <h1 id='landingpage-title'>Space app</h1>
           </header>

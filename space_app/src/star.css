@@ -16,3 +16,24 @@
     animation-iteration-count: infinite;
     animation-direction: alternate-reverse;
 }
+@keyframes example{
+    from{
+        background-color: rgb(195, 104, 255);
+        transform:  translate(-10vw, 10vh);
+    }
+    to{
+        background-color: rgb(220, 176, 255);
+        transform:  translate(0vw, -10px);
+    }    
+}
+
+@keyframes rightstar{
+    from{
+        background-color: rgb(195, 104, 255);
+        transform:  translate(20vw, 10vh);
+    }
+    to{
+        background-color: rgb(220, 176, 255);
+        transform:  translate(0vw, -5vh);
+    }    
+}
