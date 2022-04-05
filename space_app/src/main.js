@@ -1,10 +1,11 @@
 import './main.css'
-
+import image from './desktop-space.jpg'
 import { Link } from 'react-router-dom';
 
 export default function Main(){
     return (
         <div className='App'>
+          <img id='space-main-back' src={image}/>
           <header className="App-header">
             <h1 id='landingpage-title'>Space app</h1>
           </header>
