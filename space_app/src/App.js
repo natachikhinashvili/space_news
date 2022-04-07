@@ -3,6 +3,8 @@ import Main from './main';
 import Planet from "./planet";
 import Planetspreview from "./planets";
 import Rockets from "./rockets";
+import Spacexrockets from "./spacex/spacexrockets";
+import NasaRockets from "./nasa/nasa-rockets";
 import './normalize.css'
 function App() {
   return (
@@ -15,6 +17,8 @@ function App() {
         <Route path="/planets/:name" element={<Planet />} />
         <Route path="/planets" element={<Planetspreview/>} />
         <Route path="/rockets" element={<Rockets/>} />
+        <Route path="/rockets/nasa" element={<NasaRockets/>} />
+        <Route path="/rockets/spacex" element={<Spacexrockets/>} />
       </Routes>
     </div>
   );

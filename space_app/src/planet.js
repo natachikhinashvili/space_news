@@ -20,12 +20,19 @@ export default function Planet(){
                             <h2 id='planetpage-title'>{planet.name}</h2>
                         </header>   
                         <div id="header-main">
-                            <img src={planet.img} alt='' className='planetpage-planetpic'/>
+                            <div id='planet-border'>
+                                <div id="module">
+                                    <img src={planet.img} alt='' className='planetpage-planetpic'/>
+                                </div>
+                            </div>
                             <p id='planetpage-planet-info'>{planet.fullinfo}</p>
                         </div>
                     </div>
                 )
             })}
+            <section class="stage">
+                <figure class="ball"><span class="shadow"></span></figure>
+            </section>
         </div>
     )
 }

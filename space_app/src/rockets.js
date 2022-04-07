@@ -15,17 +15,21 @@ export default function Rockets(){
                 </button>
             </Link>
             <header id='rockets-page-header'>
-                <h1 id='rockets-page-title'>Rockets</h1>
+                    <h1 id='rockets-page-title'>Rockets</h1>
             </header>
             <div id='rocket-companies-container'>
-                <div id='nasa-company-div'>
-                    <img alt='' className='rocket-company-img' src={NASA}/>
-                    <p id='nasa-company-div-title'>NASA</p>
-                </div>
+                <Link to={'/rockets/nasa'} style={{ textDecoration: 'none', color: 'white'}}>
+                    <div id='nasa-company-div'>
+                        <img alt='' className='rocket-company-img' src={NASA}/>
+                        <p id='nasa-company-div-title'>NASA</p>
+                    </div>
+                </Link>
+                <Link to={'/rockets/spacex'} style={{ textDecoration: 'none',color: 'white'}}>
                 <div id='spacex-company-div'>
                     <img alt='' className='rocket-company-img' src={spacex}/>
                     <p id='spacex-company-div-title'>SpaceX</p>
                 </div>
+                </Link>
             </div>
         </div>
     )

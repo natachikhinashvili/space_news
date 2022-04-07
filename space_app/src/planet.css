@@ -23,15 +23,29 @@
     max-width: 50vw;
     font-size: 1.3rem;
     line-height: 30px;
+    margin-left: 10vw;
 }
 .planetpage-planetpic{
-    animation-name: example;
-    animation-duration: 40s;
-    animation-iteration-count: infinite;
-    animation-direction: alternate-reverse;
     filter: drop-shadow(16px 16px 50px rgb(31, 29, 49));
-    max-width: 60vw;
+    width: 20vw;
+    height: fit-content;
+    object-fit: cover;
   }
+  
+  #planet-border{
+    position: relative;
+    border-radius: 100vw;
+    width: 100vw;
+  }
+
+  #module {
+    background: black;
+    padding-top: 0rem;
+    border-radius: 100vw;
+    display: flex;
+    justify-content: center;
+  }
+
 @media screen and (max-width: 900px) {
     #header-main{
         display: flex;
