@@ -24,12 +24,12 @@ export default function Rockets(){
                         <p id='nasa-company-div-title'>NASA</p>
                     </div>
                 </Link>
-                <Link to={'/rockets/spacex'} style={{ textDecoration: 'none',color: 'white'}}>
-                <div id='spacex-company-div'>
-                    <img alt='' className='rocket-company-img' src={spacex}/>
-                    <p id='spacex-company-div-title'>SpaceX</p>
-                </div>
-                </Link>
+                <a href={'https://www.spacex.com/'} target='_blank' rel="noreferrer" style={{ textDecoration: 'none',color: 'white'}}>
+                    <div id='spacex-company-div'>
+                        <img alt='' className='rocket-company-img' src={spacex}/>
+                        <p id='spacex-company-div-title'>SpaceX</p>
+                    </div>
+                </a>
             </div>
         </div>
     )
