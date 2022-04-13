@@ -21,7 +21,7 @@ export default function Planetspreview(){
                     <Link to={'/planets/' + planet.name} style={{textDecoration: 'none', color: 'white'}}>                   
                       <div id='planet-info-container'>
                         <h2 id='planet-name'>{planet.name}</h2>
-                        <img src={planet.img} alt='' className='planet'/>
+                        <img src={planet.img} alt='' className='slide-in-elliptic-right-fwd'/>
                         <p id='planet-info'>{planet.info}</p>
                       </div>
                     </Link>

@@ -1,0 +1,362 @@
+body {
+  line-height: 1.2rem;
+  font-family: 'dosislight';
+  color: #fefefe;
+  background-color: #06011a;
+  box-shadow: inset 0 8em 16em -8em black;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 120vh;
+}
+
+.proxz-nav {
+  transform-style: preserve-3d;
+}
+.proxz-nav__system {
+  perspective: 2000px;
+  position: relative;
+  z-index: 1;
+}
+.proxz-nav__orbit, .proxz-nav__orbit:before, .proxz-nav__satellite {
+  border-radius: 50%;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+}
+.proxz-nav__orbit {
+  z-index: 10;
+  transform-style: preserve-3d;
+  transform-origin: 50% 50%;
+  display: flex;
+  align-items: center;
+}
+
+/* **************************************************
+step1 starts here
+************************************************** */
+
+.proxz-nav__orbit:nth-child(1) {
+  width: 400px;
+  height: 400px;
+  z-index: 5;
+  transform: translate(-50%, -50%) translateY(-340px) rotateX(65deg);
+}
+.proxz-nav__orbit:nth-child(1) .proxz-nav__label,
+.proxz-nav__orbit:nth-child(1) .proxz-nav__satellite,
+.proxz-nav__orbit:nth-child(1) .proxz-nav__satellite:before {
+  -webkit-animation-duration: 38s;
+          animation-duration: 38s;
+}
+.proxz-nav__orbit:nth-child(1) .proxz-nav__satellite:before {
+  background-color: #017694;
+}
+.proxz-nav__orbit:nth-child(1) .proxz-nav__label {
+  color: #017694;
+}
+.proxz-nav__orbit:nth-child(1) .proxz-nav__label:before {
+  content: "08";
+  color: rgba(254, 254, 254, 0.75);
+  padding-right: 8px;
+}
+
+/* **************************************************
+step2 starts here
+************************************************** */
+
+
+.proxz-nav__orbit:nth-child(2) {
+  width: 450px;
+  height: 450px;
+  z-index: 4;
+  transform: translate(-50%, -50%) translateY(-300px) rotateX(65deg);
+}
+.proxz-nav__orbit:nth-child(2) .proxz-nav__label,
+.proxz-nav__orbit:nth-child(2) .proxz-nav__satellite,
+.proxz-nav__orbit:nth-child(2) .proxz-nav__satellite:before {
+  -webkit-animation-duration: 36s;
+          animation-duration: 36s;
+}
+.proxz-nav__orbit:nth-child(2) .proxz-nav__satellite:before {
+  background-color: #70ffdb;
+}
+.proxz-nav__orbit:nth-child(2) .proxz-nav__label {
+  color: #70ffdb;
+}
+.proxz-nav__orbit:nth-child(2) .proxz-nav__label:before {
+  content: "07";
+  color: rgba(254, 254, 254, 0.75);
+  padding-right: 8px;
+}
+
+/* **************************************************
+step3 starts here
+************************************************** */
+
+.proxz-nav__orbit:nth-child(3) {
+  width: 550px;
+  height: 550px;
+  z-index: 3;
+  transform: translate(-50%, -50%) translateY(-250px) rotateX(65deg);
+}
+.proxz-nav__orbit:nth-child(3) .proxz-nav__label,
+.proxz-nav__orbit:nth-child(3) .proxz-nav__satellite,
+.proxz-nav__orbit:nth-child(3) .proxz-nav__satellite:before {
+  -webkit-animation-duration: 34s;
+          animation-duration: 34s;
+}
+.proxz-nav__orbit:nth-child(3) .proxz-nav__satellite:before {
+  background-color: #dbbd85;
+}
+.proxz-nav__orbit:nth-child(3) .proxz-nav__label {
+  color: #dbbd85;
+}
+.proxz-nav__orbit:nth-child(3) .proxz-nav__label:before {
+  content: "06";
+  color: rgba(254, 254, 254, 0.75);
+  padding-right: 8px;
+}
+
+/* **************************************************
+step4 starts here
+************************************************** */
+
+.proxz-nav__orbit:nth-child(4) {
+  width: 650px;
+  height: 650px;
+  z-index: 2;
+  transform: translate(-50%, -50%) translateY(-200px) rotateX(65deg);
+}
+.proxz-nav__orbit:nth-child(4) .proxz-nav__label,
+.proxz-nav__orbit:nth-child(4) .proxz-nav__satellite,
+.proxz-nav__orbit:nth-child(4) .proxz-nav__satellite:before {
+  -webkit-animation-duration: 32s;
+          animation-duration: 32s;
+}
+.proxz-nav__orbit:nth-child(4) .proxz-nav__satellite:before {
+  background-color: #ffe79a;
+}
+.proxz-nav__orbit:nth-child(4) .proxz-nav__label {
+  color: #ffe79a;
+}
+.proxz-nav__orbit:nth-child(4) .proxz-nav__label:before {
+  content: "05";
+  color: rgba(254, 254, 254, 0.75);
+  padding-right: 8px;
+}
+
+/* **************************************************
+step5 starts here
+************************************************** */
+
+.proxz-nav__orbit:nth-child(5) {
+  width: 700px;
+  height: 700px;
+  z-index: 1;
+  transform: translate(-50%, -50%) translateY(-150px) rotateX(65deg);
+}
+.proxz-nav__orbit:nth-child(5) .proxz-nav__label,
+.proxz-nav__orbit:nth-child(5) .proxz-nav__satellite,
+.proxz-nav__orbit:nth-child(5) .proxz-nav__satellite:before {
+  -webkit-animation-duration: 30s;
+          animation-duration: 30s;
+}
+.proxz-nav__orbit:nth-child(5) .proxz-nav__satellite:before {
+  background-color: #ec7e00;
+}
+.proxz-nav__orbit:nth-child(5) .proxz-nav__label {
+  color: #ffae00;
+}
+.proxz-nav__orbit:nth-child(5) .proxz-nav__label:before {
+  content: "04";
+  color: rgba(254, 254, 254, 0.75);
+  padding-right: 8px;
+}
+
+/* **************************************************
+step6 starts here
+************************************************** */
+
+.proxz-nav__orbit:nth-child(6) {
+    width: 700px;
+    height: 700px;
+    z-index: 0;
+    transform: translate(-50%, -50%) translateY(-90px) rotateX(65deg);
+}
+.proxz-nav__orbit:nth-child(6) .proxz-nav__label,
+.proxz-nav__orbit:nth-child(6) .proxz-nav__satellite,
+.proxz-nav__orbit:nth-child(6) .proxz-nav__satellite:before {
+  -webkit-animation-duration: 28s;
+          animation-duration: 28s;
+}
+.proxz-nav__orbit:nth-child(6) .proxz-nav__satellite:before {
+  background-color: #008f13;
+}
+.proxz-nav__orbit:nth-child(6) .proxz-nav__label {
+  color: #008f13;
+}
+.proxz-nav__orbit:nth-child(6) .proxz-nav__label:before {
+  content: "03";
+  color: rgba(254, 254, 254, 0.75);
+  padding-right: .5em;
+}
+
+/* **************************************************
+step6 starts here
+************************************************** */
+
+.proxz-nav__orbit:nth-child(7) {
+    width: 550px;
+    height: 550px;
+    z-index: 0;
+    transform: translate(-50%, -50%) translateY(0px) rotateX(65deg);
+  }
+  .proxz-nav__orbit:nth-child(7) .proxz-nav__label,
+  .proxz-nav__orbit:nth-child(7) .proxz-nav__satellite,
+  .proxz-nav__orbit:nth-child(7) .proxz-nav__satellite:before {
+    -webkit-animation-duration: 28s;
+            animation-duration: 28s;
+  }
+  .proxz-nav__orbit:nth-child(7) .proxz-nav__satellite:before {
+    background-color: #ffcf70;
+  }
+  .proxz-nav__orbit:nth-child(7) .proxz-nav__label {
+    color: #ffcf70;
+  }
+  .proxz-nav__orbit:nth-child(7) .proxz-nav__label:before {
+    content: "02";
+    color: rgba(254, 254, 254, 0.75);
+    padding-right: .9em;
+  }
+  /* **************************************************
+  step6 starts here
+  ************************************************** */
+  
+  .proxz-nav__orbit:nth-child(8) {
+    width: 400px;
+    height: 400px;
+    z-index: 0;
+    transform: translate(-50%, -50%) translateY(100px) rotateX(65deg);
+  }
+  .proxz-nav__orbit:nth-child(8) .proxz-nav__label,
+  .proxz-nav__orbit:nth-child(8) .proxz-nav__satellite,
+  .proxz-nav__orbit:nth-child(8) .proxz-nav__satellite:before {
+    -webkit-animation-duration: 28s;
+            animation-duration: 28s;
+  }
+  .proxz-nav__orbit:nth-child(8) .proxz-nav__satellite:before {
+    background-color: #f08725;
+  }
+  .proxz-nav__orbit:nth-child(8) .proxz-nav__label {
+    color: #f08725;
+  }
+  .proxz-nav__orbit:nth-child(8) .proxz-nav__label:before {
+    content: "01";
+    color: rgba(254, 254, 254, 0.75);
+    padding-right: .14em;
+  }
+
+.proxz-nav__orbit:before {
+  content: '';
+  width: 100%;
+  height: 100%;
+  z-index: 0;
+  box-sizing: border-box;
+  border: 1px dotted rgba(112, 230, 255, 0.5);
+  transform: translate(-50%, -50%) rotate(0);
+  animation: orbitRotation 40s linear infinite reverse;
+}
+.proxz-nav__orbit:hover {
+  cursor: pointer;
+}
+.proxz-nav__orbit:hover:before {
+  border-width: 2px;
+  border-color: #70e6ff;
+}
+.proxz-nav__orbit:hover .proxz-nav__label {
+  opacity: 1;
+  text-shadow: 0 0 1em #70e6ff;
+}
+.proxz-nav__orbit:hover .proxz-nav__satellite:before {
+  opacity: 1;
+}
+
+
+
+.proxz-nav__satellite {
+  width: 100%;
+  height: 100%;
+  z-index: 1;
+  transform: translate(-50%, -50%) rotate(0);
+  -webkit-animation: orbitRotation 40s linear infinite;
+          animation: orbitRotation 40s linear infinite;
+  transform-style: preserve-3d;
+  text-decoration: none;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+}
+.proxz-nav__satellite:before {
+  content: '';
+  display: inline-block;
+  width: 8px;
+  height: 8px;
+  position: absolute;
+  right: 0;
+  top: calc(50% - 4px);
+  border-radius: 50%;
+  transform: rotate(0) rotateX(-90deg);
+  opacity: .25;
+  animation: satelliteRotation 40s linear infinite reverse;
+}
+.proxz-nav__label {
+  opacity: 0;
+  padding: 0 8px 48px 0;
+  pointer-events: none;
+  text-align: left;
+  text-transform: uppercase;
+  transform-origin: 100% 50%;
+  transform: rotate(0) rotateX(-90deg);
+  transition: opacity .25s ease-in-out;
+  animation: satelliteRotation 40s linear infinite reverse;
+}
+.proxz-nav__description {
+  display: block;
+  font-size: 12px;
+  color: rgba(254, 254, 254, 0.75);
+}
+
+
+@-webkit-keyframes lightVibration {
+  50% {
+    opacity: .25;
+    height: 100vh;
+  }
+}
+
+@keyframes lightVibration {
+  50% {
+    opacity: .25;
+    height: 100vh;
+  }
+}
+@-webkit-keyframes orbitRotation {
+  100% {
+    transform: translate(-50%, -50%) rotate(360deg);
+  }
+}
+@keyframes orbitRotation {
+  100% {
+    transform: translate(-50%, -50%) rotate(360deg);
+  }
+}
+@-webkit-keyframes satelliteRotation {
+  100% {
+    transform: rotate(360deg) rotateX(-90deg);
+  }
+}
+@keyframes satelliteRotation {
+  100% {
+    transform: rotate(360deg) rotateX(-90deg);
+  }
+}

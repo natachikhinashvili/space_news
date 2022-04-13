@@ -1,0 +1,63 @@
+$nRings: 32;
+
+@mixin random-border-color() {
+  color: rgb(random(25), random(25), random(115));
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  min-height: 30vh;
+  background: #000;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+}
+
+.scene {
+  width: 10vmin;
+  height: 10vmin;
+  margin:2% auto;
+  perspective: 175vmin;
+}
+
+.wrapper {
+  width: 100%;
+  aspect-ratio: 1;
+  transform-style: preserve-3d;
+}
+
+.sphere {
+  position: relative;
+  width: 87.5%;
+  height: 87.5%;
+  margin:0 auto;
+  transform-style: preserve-3d;
+  animation: rotate 7.5s infinite linear;
+
+  .ring {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    aspect-ratio: 1;
+    border-radius: 50%;
+    border: 6px dashed;
+    
+    @for $i from 1 through $nRings {
+      &:nth-child(#{$i}) {
+        @include random-border-color();
+        transform: rotateY(((360deg / 2) / $nRings) * $i);
+      }
+    }
+  }
+}
+
+@keyframes rotate {
+  to {
+    transform: rotateY(360deg);
+  }
+}

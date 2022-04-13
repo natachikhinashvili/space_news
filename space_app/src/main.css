@@ -1,11 +1,11 @@
 .App {
     text-align: center;
     color: white;
-    min-height: 100vh;
     font-family: 'Nanum Myeongjo', serif;
     display: flex;
     flex-direction: column;
     justify-content: space-evenly;
+    background-color: black;
 }
 button{
     cursor: pointer;
@@ -71,6 +71,5 @@ button{
     position: absolute;
     z-index: -1;
     width: 100vw;
-    height: 100vh;
     object-fit: cover;
 }
