@@ -1,7 +1,6 @@
 import { Routes, Route } from "react-router-dom";
 import Main from './main';
 import Planet from "./planet";
-import Planetspreview from "./planets";
 import './normalize.css'
 import music from './freezing-night-28066.mp3'
 import { useEffect } from "react";
@@ -24,7 +23,6 @@ function App() {
       <Routes>
         <Route path="/" element={<Main />} />
         <Route path="/planets/:name" element={<Planet />} />
-        <Route path="/planets" element={<Planetspreview/>} />
       </Routes>
     </div>
   );

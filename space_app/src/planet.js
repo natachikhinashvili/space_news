@@ -8,7 +8,7 @@ export default function Planet(){
     const filtered=planetsData.filter(planet=> planet.name === slug.name)
     return (
         <div id="planetpage">
-        <Link to='/planets'>
+        <Link to='/'>
           <button id='back-from-rockets'>
              <AiOutlineArrowLeft size={30} color='#fff'/>
           </button>

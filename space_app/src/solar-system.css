@@ -2,7 +2,7 @@ body {
   line-height: 1.2rem;
   font-family: 'dosislight';
   color: #fefefe;
-  background-color: #06011a;
+  background-color: #04010f;
   box-shadow: inset 0 8em 16em -8em black;
   display: flex;
   align-items: center;
@@ -256,13 +256,24 @@ step6 starts here
     padding-right: .14em;
   }
 
+.sun{
+  border-radius: 50%;
+  display: flex;
+  width: 100px;
+  height: 100px;
+  background-color: green;
+  bottom: 10vh;
+  position: absolute;
+}
+
+
 .proxz-nav__orbit:before {
   content: '';
   width: 100%;
   height: 100%;
   z-index: 0;
   box-sizing: border-box;
-  border: 1px dotted rgba(112, 230, 255, 0.5);
+  border: 1px dotted rgba(82, 86, 141, 0.5);
   transform: translate(-50%, -50%) rotate(0);
   animation: orbitRotation 40s linear infinite reverse;
 }
