@@ -1,18 +1,10 @@
-import { useParams } from "react-router-dom"
 import planetsData from "./planets-data"
-import { Link } from 'react-router-dom'
-import { AiOutlineArrowLeft } from "react-icons/ai";
 import './planet.css'
-export default function Planet(){
-    const slug = useParams()
-    const filtered=planetsData.filter(planet=> planet.name === slug.name)
+export default function Planet(planetname){
+    let parsedData = JSON.parse(planetsData)
+    const filtered=parsedData.filter(planet=> planet.name === planetname.planetname)
     return (
         <div id="planetpage">
-        <Link to='/'>
-          <button id='back-from-rockets'>
-             <AiOutlineArrowLeft size={30} color='#fff'/>
-          </button>
-        </Link>
             {filtered.map(planet => {
                 return ( 
                     <div id="planetpage-planet-container">
@@ -30,9 +22,6 @@ export default function Planet(){
                     </div>
                 )
             })}
-            <section class="stage">
-                <figure class="ball"><span class="shadow"></span></figure>
-            </section>
         </div>
     )
 }
