@@ -14,14 +14,14 @@ export default function SolarSystem(){
   }
     return (
         <div id='solar-system'>
-            <div class="proxz-nav">
-                <div class="proxz-nav__system">
+            <div class="solar-system-container">
+                <div className="solar-system">
                   {parsed.reverse().map((planet,i)  => {
                     return(
-                      <div onClick={() => handleClick(planet.name)} class="proxz-nav__orbit">
-                        <div class="proxz-nav__satellite">
-                          <span class="proxz-nav__label">{planet.name}
-                            <span class="proxz-nav__description">{planet.info}</span>
+                      <div onClick={() => handleClick(planet.name)} className="orbit">
+                        <div className="satellite">
+                          <span className="planet-name">{planet.name}
+                            <span className="planet-info">{planet.info}</span>
                           </span>
                         </div>
                       </div>

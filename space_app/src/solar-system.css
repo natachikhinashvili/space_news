@@ -10,24 +10,24 @@ body {
   height: 100vh;
 }
 
-.proxz-nav {
+.solar-system-container {
   transform-style: preserve-3d;
   position: relative;
   z-index: 0;
   margin-top: 20vh;
 }
-.proxz-nav__system {
+.solar-system {
   perspective: 2000px;
   position: relative;
   z-index: 1;
 }
-.proxz-nav__orbit, .proxz-nav__orbit:before, .proxz-nav__satellite {
+.orbit, .orbit:before, .satellite {
   border-radius: 50%;
   position: absolute;
   left: 50%;
   top: 50%;
 }
-.proxz-nav__orbit {
+.orbit {
   z-index: 10;
   transform-style: preserve-3d;
   transform-origin: 50% 50%;
@@ -35,242 +35,198 @@ body {
   align-items: center;
 }
 
-/* **************************************************
-step1 starts here
-************************************************** */
-
-.proxz-nav__orbit:nth-child(1) {
+.orbit:nth-child(1) {
   width: 400px;
   height: 400px;
   z-index: 5;
   transform: translate(-50%, -50%) translateY(-340px) rotateX(65deg);
 }
-.proxz-nav__orbit:nth-child(1) .proxz-nav__label,
-.proxz-nav__orbit:nth-child(1) .proxz-nav__satellite,
-.proxz-nav__orbit:nth-child(1) .proxz-nav__satellite:before {
+.orbit:nth-child(1) .planet-name,
+.orbit:nth-child(1) .satellite,
+.orbit:nth-child(1) .satellite:before {
   -webkit-animation-duration: 38s;
           animation-duration: 38s;
 }
-.proxz-nav__orbit:nth-child(1) .proxz-nav__satellite:before {
+.orbit:nth-child(1) .satellite:before {
   background-color: #017694;
 }
-.proxz-nav__orbit:nth-child(1) .proxz-nav__label {
+.orbit:nth-child(1) .planet-name {
   color: #017694;
 }
-.proxz-nav__orbit:nth-child(1) .proxz-nav__label:before {
+.oorbit:nth-child(1) .planet-name:before {
   content: "08";
   color: rgba(254, 254, 254, 0.75);
   padding-right: 8px;
 }
 
-/* **************************************************
-step2 starts here
-************************************************** */
-
-
-.proxz-nav__orbit:nth-child(2) {
+.orbit:nth-child(2) {
   width: 450px;
   height: 450px;
   z-index: 4;
   transform: translate(-50%, -50%) translateY(-300px) rotateX(65deg);
 }
-.proxz-nav__orbit:nth-child(2) .proxz-nav__label,
-.proxz-nav__orbit:nth-child(2) .proxz-nav__satellite,
-.proxz-nav__orbit:nth-child(2) .proxz-nav__satellite:before {
+.orbit:nth-child(2) .planet-name,
+.orbit:nth-child(2) .satellite,
+.orbit:nth-child(2) .satellite:before {
   -webkit-animation-duration: 36s;
           animation-duration: 36s;
 }
-.proxz-nav__orbit:nth-child(2) .proxz-nav__satellite:before {
+.orbit:nth-child(2) .satellite:before {
   background-color: #70ffdb;
 }
-.proxz-nav__orbit:nth-child(2) .proxz-nav__label {
+.orbit:nth-child(2) .planet-name {
   color: #70ffdb;
 }
-.proxz-nav__orbit:nth-child(2) .proxz-nav__label:before {
+.orbit:nth-child(2) .planet-name:before {
   content: "07";
   color: rgba(254, 254, 254, 0.75);
   padding-right: 8px;
 }
 
-/* **************************************************
-step3 starts here
-************************************************** */
-
-.proxz-nav__orbit:nth-child(3) {
+.orbit:nth-child(3) {
   width: 550px;
   height: 550px;
   z-index: 3;
   transform: translate(-50%, -50%) translateY(-250px) rotateX(65deg);
 }
-.proxz-nav__orbit:nth-child(3) .proxz-nav__label,
-.proxz-nav__orbit:nth-child(3) .proxz-nav__satellite,
-.proxz-nav__orbit:nth-child(3) .proxz-nav__satellite:before {
+.orbit:nth-child(3) .planet-name,
+.orbit:nth-child(3) .satellite,
+.orbit:nth-child(3) .satellite:before {
   -webkit-animation-duration: 34s;
           animation-duration: 34s;
 }
-.proxz-nav__orbit:nth-child(3) .proxz-nav__satellite:before {
+.orbit:nth-child(3) .satellite:before {
   background-color: #dbbd85;
 }
-.proxz-nav__orbit:nth-child(3) .proxz-nav__label {
+.orbit:nth-child(3) .planet-name {
   color: #dbbd85;
 }
-.proxz-nav__orbit:nth-child(3) .proxz-nav__label:before {
+.orbit:nth-child(3) .planet-name:before {
   content: "06";
   color: rgba(254, 254, 254, 0.75);
   padding-right: 8px;
 }
 
-/* **************************************************
-step4 starts here
-************************************************** */
-
-.proxz-nav__orbit:nth-child(4) {
+.orbit:nth-child(4) {
   width: 650px;
   height: 650px;
   z-index: 2;
   transform: translate(-50%, -50%) translateY(-200px) rotateX(65deg);
 }
-.proxz-nav__orbit:nth-child(4) .proxz-nav__label,
-.proxz-nav__orbit:nth-child(4) .proxz-nav__satellite,
-.proxz-nav__orbit:nth-child(4) .proxz-nav__satellite:before {
+.orbit:nth-child(4) .planet-name,
+.orbit:nth-child(4) .satellite,
+.orbit:nth-child(4) .satellite:before {
   -webkit-animation-duration: 32s;
           animation-duration: 32s;
 }
-.proxz-nav__orbit:nth-child(4) .proxz-nav__satellite:before {
+.orbit:nth-child(4) .satellite:before {
   background-color: #ffe79a;
 }
-.proxz-nav__orbit:nth-child(4) .proxz-nav__label {
+.orbit:nth-child(4) .planet-name {
   color: #ffe79a;
 }
-.proxz-nav__orbit:nth-child(4) .proxz-nav__label:before {
+.orbit:nth-child(4) .planet-name:before {
   content: "05";
   color: rgba(254, 254, 254, 0.75);
   padding-right: 8px;
 }
 
-/* **************************************************
-step5 starts here
-************************************************** */
-
-.proxz-nav__orbit:nth-child(5) {
+.orbit:nth-child(5) {
   width: 700px;
   height: 700px;
   z-index: 1;
   transform: translate(-50%, -50%) translateY(-150px) rotateX(65deg);
 }
-.proxz-nav__orbit:nth-child(5) .proxz-nav__label,
-.proxz-nav__orbit:nth-child(5) .proxz-nav__satellite,
-.proxz-nav__orbit:nth-child(5) .proxz-nav__satellite:before {
+.orbit:nth-child(5) .planet-name,
+.orbit:nth-child(5) .satellite,
+.orbit:nth-child(5) .satellite:before {
   -webkit-animation-duration: 30s;
           animation-duration: 30s;
 }
-.proxz-nav__orbit:nth-child(5) .proxz-nav__satellite:before {
+.orbit:nth-child(5) .satellite:before {
   background-color: #ec7e00;
 }
-.proxz-nav__orbit:nth-child(5) .proxz-nav__label {
+.proxz-nav__orbit:nth-child(5) .planet-name {
   color: #ffae00;
 }
-.proxz-nav__orbit:nth-child(5) .proxz-nav__label:before {
+.orbit:nth-child(5) .planet-name:before {
   content: "04";
   color: rgba(254, 254, 254, 0.75);
   padding-right: 8px;
 }
-
-/* **************************************************
-step6 starts here
-************************************************** */
-
-.proxz-nav__orbit:nth-child(6) {
+.orbit:nth-child(6) {
     width: 700px;
     height: 700px;
     z-index: 0;
     transform: translate(-50%, -50%) translateY(-90px) rotateX(65deg);
 }
-.proxz-nav__orbit:nth-child(6) .proxz-nav__label,
-.proxz-nav__orbit:nth-child(6) .proxz-nav__satellite,
-.proxz-nav__orbit:nth-child(6) .proxz-nav__satellite:before {
+.orbit:nth-child(6) .planet-name,
+.orbit:nth-child(6) .satellite,
+.orbit:nth-child(6) .satellite:before {
   -webkit-animation-duration: 28s;
           animation-duration: 28s;
 }
-.proxz-nav__orbit:nth-child(6) .proxz-nav__satellite:before {
+.orbit:nth-child(6) .satellite:before {
   background-color: #008f13;
 }
-.proxz-nav__orbit:nth-child(6) .proxz-nav__label {
+.orbit:nth-child(6) .planet-name {
   color: #008f13;
 }
-.proxz-nav__orbit:nth-child(6) .proxz-nav__label:before {
+.orbit:nth-child(6) .planet-name:before {
   content: "03";
   color: rgba(254, 254, 254, 0.75);
   padding-right: .5em;
 }
 
-/* **************************************************
-step6 starts here
-************************************************** */
-
-.proxz-nav__orbit:nth-child(7) {
+.orbit:nth-child(7) {
     width: 550px;
     height: 550px;
     z-index: 0;
     transform: translate(-50%, -50%) translateY(0px) rotateX(65deg);
   }
-  .proxz-nav__orbit:nth-child(7) .proxz-nav__label,
-  .proxz-nav__orbit:nth-child(7) .proxz-nav__satellite,
-  .proxz-nav__orbit:nth-child(7) .proxz-nav__satellite:before {
+  .orbit:nth-child(7) .planet-name,
+  .orbit:nth-child(7) .satellite,
+  .orbit:nth-child(7) .satellite:before {
     -webkit-animation-duration: 28s;
             animation-duration: 28s;
   }
-  .proxz-nav__orbit:nth-child(7) .proxz-nav__satellite:before {
+  .orbit:nth-child(7) .satellite:before {
     background-color: #ffcf70;
   }
-  .proxz-nav__orbit:nth-child(7) .proxz-nav__label {
+  .orbit:nth-child(7) .planet-name {
     color: #ffcf70;
   }
-  .proxz-nav__orbit:nth-child(7) .proxz-nav__label:before {
+  .orbit:nth-child(7) .planet-name:before {
     content: "02";
     color: rgba(254, 254, 254, 0.75);
     padding-right: .9em;
   }
-  /* **************************************************
-  step6 starts here
-  ************************************************** */
   
-  .proxz-nav__orbit:nth-child(8) {
+  .orbit:nth-child(8) {
     width: 400px;
     height: 400px;
     z-index: 0;
     transform: translate(-50%, -50%) translateY(100px) rotateX(65deg);
   }
-  .proxz-nav__orbit:nth-child(8) .proxz-nav__label,
-  .proxz-nav__orbit:nth-child(8) .proxz-nav__satellite,
-  .proxz-nav__orbit:nth-child(8) .proxz-nav__satellite:before {
+  .orbit:nth-child(8) .planet-name,
+  .orbit:nth-child(8) .satellite,
+  .orbit:nth-child(8) .satellite:before {
     -webkit-animation-duration: 28s;
             animation-duration: 28s;
   }
-  .proxz-nav__orbit:nth-child(8) .proxz-nav__satellite:before {
+  .orbit:nth-child(8) .satellite:before {
     background-color: #f08725;
   }
-  .proxz-nav__orbit:nth-child(8) .proxz-nav__label {
+  .orbit:nth-child(8) .planet-name {
     color: #f08725;
   }
-  .proxz-nav__orbit:nth-child(8) .proxz-nav__label:before {
+  .orbit:nth-child(8) .planet-name:before {
     content: "01";
     color: rgba(254, 254, 254, 0.75);
     padding-right: .14em;
   }
 
-.sun{
-  border-radius: 50%;
-  display: flex;
-  width: 100px;
-  height: 100px;
-  background-color: green;
-  bottom: 10vh;
-  position: absolute;
-}
-
-
-.proxz-nav__orbit:before {
+.orbit:before {
   content: '';
   width: 100%;
   height: 100%;
@@ -280,24 +236,24 @@ step6 starts here
   transform: translate(-50%, -50%) rotate(0);
   animation: orbitRotation 40s linear infinite reverse;
 }
-.proxz-nav__orbit:hover {
+.orbit:hover {
   cursor: pointer;
 }
-.proxz-nav__orbit:hover:before {
+.orbit:hover:before {
   border-width: 2px;
   border-color: #70e6ff;
 }
-.proxz-nav__orbit:hover .proxz-nav__label {
+.orbit:hover .planet-name{
   opacity: 1;
   text-shadow: 0 0 1em #70e6ff;
 }
-.proxz-nav__orbit:hover .proxz-nav__satellite:before {
+.orbit:hover .satellite:before {
   opacity: 1;
 }
 
 
 
-.proxz-nav__satellite {
+.satellite {
   width: 100%;
   height: 100%;
   z-index: 1;
@@ -310,7 +266,7 @@ step6 starts here
   align-items: center;
   justify-content: flex-end;
 }
-.proxz-nav__satellite:before {
+.satellite:before {
   content: '';
   display: inline-block;
   width: 8px;
@@ -323,7 +279,7 @@ step6 starts here
   opacity: .25;
   animation: satelliteRotation 40s linear infinite reverse;
 }
-.proxz-nav__label {
+.planet-name {
   opacity: 0;
   padding: 0 8px 48px 0;
   pointer-events: none;
@@ -334,7 +290,7 @@ step6 starts here
   transition: opacity .25s ease-in-out;
   animation: satelliteRotation 40s linear infinite reverse;
 }
-.proxz-nav__description {
+.planet-info {
   display: block;
   font-size: 12px;
   color: rgba(254, 254, 254, 0.75);
